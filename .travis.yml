@@ -3,5 +3,10 @@ language: go
 jobs:
   include:
     - stage: test
+      name: Run Go tests
       script:
         - go test -count 1 -race ./...
+    - stage: test
+      name: Check for AWS CLI availability
+      script:
+        - aws --version
