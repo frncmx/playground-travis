@@ -1,8 +1,11 @@
-dist: focal
-language: go
-
+arch: amd64
 virt: lxd
+os: linux
+dist: focal
 sudo: false
+
+
+language: go
 services:
   - docker
 install:
