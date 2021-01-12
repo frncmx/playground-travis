@@ -1,5 +1,9 @@
 dist: focal
 language: go
+
+install:
+  - pip install --user awscli
+
 jobs:
   include:
     - stage: test
