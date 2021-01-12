@@ -1,6 +1,7 @@
 dist: focal
 language: go
 
+sudo: false
 install:
   - pip install --user awscli
 
