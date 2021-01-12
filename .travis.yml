@@ -2,6 +2,8 @@ dist: focal
 language: go
 
 sudo: false
+services:
+  - docker
 install:
   - pip install --user awscli
 
@@ -19,3 +21,4 @@ jobs:
       name: Check for Docker
       script:
         - docker ps
+        - docker run --rm -it hello-world
