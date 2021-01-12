@@ -15,3 +15,7 @@ jobs:
       name: Check for AWS CLI availability
       script:
         - aws --version
+    - stage: test
+      name: Check for Docker
+      script:
+        - docker ps
