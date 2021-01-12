@@ -1,7 +1,7 @@
-arch: amd64
+#arch: amd64
 virt: lxd
-os: linux
-dist: focal
+#os: linux
+#dist: focal
 #sudo: false
 
 language: go
