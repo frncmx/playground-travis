@@ -1,0 +1,7 @@
+dist: focal
+language: go
+jobs:
+  include:
+    - stage: test
+      script:
+        - go test -count 1 -race ./...
